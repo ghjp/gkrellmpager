@@ -1,0 +1,19 @@
+GKrellM Pager Version 0.1.0
+Copyright (c) 2005 Dr. Johann Pfefferl
+
+Released under the GNU Public License
+
+Description:
+A GKrellM plugin which allows one-click access and status
+of your virtual desktops.
+You need an EWMH conform window manager to get full functionality!!
+
+To Compile:
+Unpack the tarball & run make.
+Note: Requires GKrellM 2 or higher.
+
+To Install:
+Simply copy gkrellmpager.so to the desired plugin directory
+or
+type "make install" to get it in your private plugin directory.
+
