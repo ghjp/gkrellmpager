@@ -15,6 +15,8 @@ LDFLAGS += $(shell pkg-config --libs gtk+-2.0) -shared -W1
 
 OBJS = gkrellmpager.o
 
+PLUGIN_DIR ?= /usr/local/lib/gkrellm2/plugins
+
 gkrellmpager.so: $(OBJS)
 	$(CC) $^ -o $@ $(LDFLAGS)
 
@@ -24,7 +26,7 @@ clean:
 gkrellmpager.o: gkrellmpager.c
 
 install: gkrellmpager.so
-	install -m 755 $^ $(HOME)/.gkrellm2/plugins
+	install -s -m 755 $^ $(PLUGIN_DIR)
 
 test: gkrellmpager.so
 	gkrellm -p $^

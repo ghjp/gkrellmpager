@@ -1,0 +1,14 @@
+Source: gkrellmpager
+Section: x11
+Priority: optional
+Maintainer: Dr. Johann Pfefferl <pfefferl@gmx.net>
+Build-Depends: debhelper (>= 5.0.0), gkrellm (>= 2.0.0), libgtk2.0-dev
+Standards-Version: 3.7.2
+
+Package: gkrellmpager
+Architecture: any
+Depends: ${shlibs:Depends}, gkrellm (>= 2.0.0)
+Description: A pager plugin for GKrellM
+ A GKrellM plugin which allows one-click access and status
+ of your virtual desktops.
+ You need an EWMH conform window manager to get full functionality!!
