@@ -1,3 +1,9 @@
+gkrellmpager (0.2.0-2) unstable; urgency=low
+
+  * Initial release for lenny
+
+ -- Dr. Johann Pfefferl <pfefferl@gmx.net>  Wed, 18 Feb 2009 13:27:11 +0100
+
 gkrellmpager (0.2.0-1) unstable; urgency=low
 
   * Initial release
