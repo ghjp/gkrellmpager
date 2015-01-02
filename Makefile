@@ -1,7 +1,7 @@
 # Sample Makefile for a GKrellM plugin
 
 VERSION = "0.2.0"
-REL_DATE = "2005-07-04"
+REL_DATE = "2015-01-02"
 #GTK_INCLUDE = `pkg-config gtk+-2.0 --cflags`
 #GTK_LIB = `pkg-config gtk+-2.0 --libs`
 #
@@ -10,8 +10,8 @@ REL_DATE = "2005-07-04"
 ##LIBS = $(GTK_LIB) $(IMLIB_LIB) -lefence
 #LIBS = $(GTK_LIB) $(IMLIB_LIB)
 
-CFLAGS += $(shell pkg-config --cflags gtk+-2.0) -DVERSION='$(VERSION)' -DREL_DATE='$(REL_DATE)' $(CFLAGS_DEBUG) 
-LDFLAGS += $(shell pkg-config --libs gtk+-2.0) -shared -W1
+CFLAGS += -fPIC $(shell pkg-config --cflags gtk+-2.0) -DVERSION='$(VERSION)' -DREL_DATE='$(REL_DATE)' $(CFLAGS_DEBUG) 
+LDFLAGS += $(shell pkg-config --libs gtk+-2.0) -shared
 
 OBJS = gkrellmpager.o
 
