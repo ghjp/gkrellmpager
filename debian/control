@@ -2,12 +2,15 @@ Source: gkrellmpager
 Section: x11
 Priority: optional
 Maintainer: Dr. Johann Pfefferl <pfefferl@gmx.net>
-Build-Depends: debhelper (>= 5.0.0), gkrellm (>= 2.0.0), libgtk2.0-dev
-Standards-Version: 3.7.2
+Build-Depends: debhelper (>= 9), gkrellm (>= 2.0.0), libgtk2.0-dev
+Standards-Version: 3.9.5
+Homepage: http://sourceforge.net/projects/gkrellmpager/
+Vcs-Git: https://gitorious.org/gkrellmpager/gkrellmpager.git
+#Vcs-Browser: http://anonscm.debian.org/?p=collab-maint/gkrellmpager.git;a=summary
 
 Package: gkrellmpager
 Architecture: any
-Depends: ${shlibs:Depends}, gkrellm (>= 2.0.0)
+Depends: ${shlibs:Depends}, ${misc:Depends}, gkrellm (>= 2.0.0)
 Description: A pager plugin for GKrellM
  A GKrellM plugin which allows one-click access and status
  of your virtual desktops.
