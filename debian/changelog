@@ -1,3 +1,9 @@
+gkrellmpager (0.2.0-5) unstable; urgency=medium
+
+  * Prepared for buster release
+
+ -- Dr. Johann Pfefferl <pfefferl@gmx.net>  Thu, 11 Jul 2019 15:40:12 +0200
+
 gkrellmpager (0.2.0-4) unstable; urgency=medium
 
   * Update for Debian Stretch
